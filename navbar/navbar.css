@@ -1,0 +1,32 @@
+#nav {
+    position: fixed; /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 6.9vw;
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: Adjust transparency */
+    z-index: 1000;
+}
+
+#nav-part2 {
+    display: flex; /* Makes navigation items appear in a row */
+    align-items: center;
+    gap: 3vw; /* Adjust spacing between links */
+}
+
+#nav-part2 a {
+    text-decoration: none;
+    color: black; /* Adjust as needed */
+    font-size: 1.04vw;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+#nav-part2 a:hover {
+    color: #3F7DF4; /* Change color on hover */
+}
+
+

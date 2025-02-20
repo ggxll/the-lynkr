@@ -1,0 +1,137 @@
+/* body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+.left {
+    background-image: url(123.jpg);
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.left h1 {
+    font-size: 3rem;
+    font-family:'Poppins', sans-serif;
+ font-weight: 700;
+    opacity: 100;
+    animation: fadeIn 10s forwards;
+}
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    width: 80%;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #333;
+}*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.logo-container img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.left {
+    /* background: linear-gradient(to bottom, #0d1117, #161b22); */
+    background-image: url(123.jpg);
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+}
+.left h1 {
+    font-size: 3rem;
+    font-family:'Poppins', sans-serif;
+ font-weight: 700;
+    /* opacity: 0; */
+    animation: fadeIn 10s forwards;
+}
+.left h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    align-content: center;
+
+}
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+#signupForm {
+    width: 80%;
+    padding: 30px;
+    background: rgb(248, 249, 251);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ba1d7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background-color: #2ea043;
+}
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="11.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar-container"></div>
+      <script>
+        fetch("../navbar/navbar.html") // Adjust path if needed
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-container").innerHTML = data;
+          });
+      </script>
+    <main>
+        <div class="filter-bar">
+            <div class="filter-buttons">
+                <button>ALL</button>
+                <button>WEB</button>
+                <button>AI</button>
+                <button>CYBER</button>
+            </div>
+            <div class="search-filter">
+                <input type="text" placeholder="search">
+                <button>
+                    <span>FILTER</span>
+                    <i class="fas fa-sliders-h"></i>
+                </button>
+            </div>
+        </div>
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project image 1">
+                <div class="project-card-content">
+                    <h2>Project 1</h2>
+                    <p>@username1</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.5/5</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project image 2">
+                <div class="project-card-content">
+                    <h2>Project 2</h2>
+                    <p>@username2</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.3/5</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project image 3">
+                <div class="project-card-content">
+                    <h2>Project 3</h2>
+                    <p>@username3</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.7/5</span>
+                </div>
+            </div>
+        </div>
+        <h2 class="section-title">Notable Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project4.jpg" alt="Project image 4">
+                <div class="project-card-content">
+                    <h2>Notable Project 1</h2>
+                    <p>@notable_user1</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.8/5</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project5.jpg" alt="Project image 5">
+                <div class="project-card-content">
+                    <h2>Notable Project 2</h2>
+                    <p>@notable_user2</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.6/5</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project6.jpg" alt="Project image 6">
+                <div class="project-card-content">
+                    <h2>Notable Project 3</h2>
+                    <p>@notable_user3</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.9/5</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

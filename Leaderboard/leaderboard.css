@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #F6F8FB;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: "";
+    gap: 30px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff; /* Updated link color for dark nav */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #ccc;
+  }
+
+  .user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #444;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+  }
+
+  .community-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .project-item,
+  .developer-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+
+  .project-item:hover,
+  .developer-item:hover {
+    background: #eaeaea;
+  }
+
+  .rank {
+    font-weight: bold;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+  }
+
+  .graph-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 400px;
+  }
+
+  .graph {
+    background: #f8f8f8;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+  }
+
+  /* Additional Responsive Styling */
+  @media (max-width: 768px) {
+    .main-content {
+      grid-template-columns: 1fr;
+    }
+
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+@font-face {
+    font-family: "Plain Light";
+    src: url(./fonts/Poppins-ExtraLight.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Poppins ExtraLight";
+    /* background-color: #7a7070; */
+
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 1.9vw;
+    /* background-color: #d60a0a; */
+    /* padding-left: 70px; */
+    margin-left: 50px;
+}
+
+#nav-part2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+    /* background-color: rebeccapurple; */
+    /* margin-left: -4vw; */
+    text-decoration: none;
+    /* padding: 30px 30px; */
+}
+
+#nav-part2 a {
+    text-decoration: none;
+    color: black; 
+    font-size: 1.04vw;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+#nav-part2 a:hover {
+    color: #3F7DF4; /* Change color on hover */
+}
+
+#nav-part2 h4 {
+    font-size: 1.04vw;
+    font-weight: 500;
+}
+
+#navlog img{
+  height: 70px;
+  width: 70px;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

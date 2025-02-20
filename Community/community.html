@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Platform</title>
+    <link rel="stylesheet" href="community.css">
+    <script src="community..js">
+    </script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+      <script>
+        fetch("../navbar/navbar.html") // Adjust path if needed
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-container").innerHTML = data;
+          });
+      </script>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>COMMUNITIES</h3>
+                <button class="communities-btn">COMMUNITIES</button>
+                <ul class="communities-list">
+                    <li>COMMUNITIES</li>
+                    <li>COMMUNITIES</li>
+                    <li>COMMUNITIES</li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>EVENTS</h3>
+            </div>
+            <div class="sidebar-section">
+                <h3>COLLABORATIONS</h3>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h1 class="community-name">COMMUNITY NAME</h1>
+            
+            <div class="project-card">
+                <div class="comments-container"></div>
+                <button class="toggle-comments" style="display: none;">⬇ Show More</button>
+
+                <div class="user-info">
+                    <span class="avatar">👤</span>
+                    <span class="username">@username</span>
+                    <span class="time">~10 hrs</span>
+                </div>
+                
+                <h2 class="project-title">Title of the project</h2>
+                <p class="description">DESCRIPTION</p>
+                
+                <div class="project-image">450*450px</div>
+                
+                <div class="interaction-bar">
+                    <div class="rating">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="rating-text">4.5/5</span>
+                    </div>
+                    <input type="text" class="comment-input" placeholder="comment........">
+                </div>
+            </div>
+        </main>
+
+        <aside class="tags-sidebar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="search for tags....">
+                <button class="clear-btn">✕</button>
+            </div>
+            <div class="tags">
+                <span class="tag">web dev</span>
+                <span class="tag">ai/ml</span>
+                <span class="tag">cyber</span>
+                <span class="tag">cloud</span>
+                <span class="tag">IoT</span>
+                <span class="tag">civil</span>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

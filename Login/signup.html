@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Signup Clone</title>
+    <link rel="stylesheet" href="signup.css"> 
+    
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById("signupEmail").value.trim();
+            const password = document.getElementById("signupPassword").value.trim();
+            const username = document.getElementById("signupUsername").value.trim();
+    
+            if (email && password && username) {
+                localStorage.setItem("loggedInUser", username);
+                window.location.href = "/Lynkr/index.html"; // Redirect after signup
+            } else {
+                alert("Please fill all fields.");
+            }
+        });
+    </script>
+</head>
+<body>
+    <a href="/Lynkr/index.html" class="logo-container">
+        <img src="logo.png" alt="Home">
+    </a>
+    <div class="left">
+        <h1>Create your free account</h1>
+        <p>Explore LYNKR core features for individuals and organizations.</p>
+        <!-- <img src="123.jpg" alt="Octocat Image" width="500"> -->
+    </div>
+    <div class="right">
+        <form id="signupForm" >
+            <h2>Sign Up</h2>
+            <input type="email" id="signupEmail" placeholder="Email" class="input-field" required>
+            <input type="password" id="signupPassword" placeholder="Password" class="input-field" required>
+            <input type="text" id="signupUsername" placeholder="Username" class="input-field" required>
+            <button type="submit" class="btn">Continue</button>
+        </form>
+    </div>
+</body>
+</html>

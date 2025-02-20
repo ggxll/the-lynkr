@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Project Showcase</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar-container"></div>
+      <script>
+        fetch("../navbar/navbar.html") // Adjust path if needed
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-container").innerHTML = data;
+          });
+      </script>
+    </header>
+
+    <main>
+      <div class="about-container">
+        <h2>About Our Platform</h2>
+
+        <div class="about-section">
+          <h3>🌟 Our Mission</h3>
+          <p>
+            We created this platform to empower developers and creators to
+            showcase their work, connect with like-minded individuals, and gain
+            recognition for their projects. Our goal is to build a community
+            where innovation thrives and great ideas get the attention they
+            deserve.
+          </p>
+        </div>
+
+        <div class="about-section">
+          <h3>🚀 What We Offer</h3>
+          <ul class="values-list">
+            <li>Project showcasing with detailed descriptions</li>
+            <li>GitHub integration for code sharing</li>
+            <li>Community-driven review system</li>
+            <li>Real-time leaderboard rankings</li>
+            <li>Collaboration opportunities</li>
+            <li>Developer networking features</li>
+          </ul>
+        </div>
+
+        <div class="about-section">
+          <h3>👥 Meet the Team</h3>
+          <div class="team-members">
+            <div class="team-member">
+              <img src="../assets/chetan.jpeg" alt="John Doe" />
+              <h4>Chetan Sharma</h4>
+              <p>Lead Ideator & Presenter</p>
+            </div>
+            <div class="team-member">
+              <img src="../assets/gg.jpg" alt="Jane Smith" />
+              <h4>Gurwinder Gill</h4>
+              <p>Designer & Developer</p>
+            </div>
+            <div class="team-member">
+              <img src="../assets/ankush.jpeg" alt="Mike Johnson" />
+              <h4>Ankush Thakur</h4>
+              <p>UI Theme Designer</p>
+            </div>
+            <div class="team-member">
+              <img src="../assets/dhruv2.jpeg" alt="Mike Johnson" />
+              <h4>Dhruv Jain</h4>
+              <p>Community Manager</p>
+            </div>
+            <div class="team-member">
+              <img src="../assets/gurvir.jpeg" alt="Mike Johnson" />
+              <h4>Gurvir Singh</h4>
+              <p>Support & Coordination</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-section">
+          <h3>📈 Our Success Metrics</h3>
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              text-align: center;
+              margin: 2rem 0;
+            "
+          >
+            <div>
+              <h4>5000+</h4>
+              <p>Projects Showcased</p>
+            </div>
+            <div>
+              <h4>1200+</h4>
+              <p>Active Members</p>
+            </div>
+            <div>
+              <h4>98%</h4>
+              <p>Positive Reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-section" style="text-align: center">
+          <h3>Ready to Join?</h3>
+          <p>
+            Start showcasing your projects today and connect with our growing
+            community!
+          </p>
+          <a href="signup.html" class="cta-button">Get Started</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Contact us: contact@example.com | Phone: +123 456 7890</p>
+      <p>&copy; 2025 Lynker. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

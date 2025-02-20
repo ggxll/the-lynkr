@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+      <script>
+        fetch("../navbar/navbar.html") // Adjust path if needed
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-container").innerHTML = data;
+          });
+      </script>
+
+
+  <h1>Leaderboard</h1>
+
+  <div class="main-content">
+    <div>
+      <div class="community-card">
+        <h2>TOP 5 PROJECTS</h2>
+        <div class="project-item">
+          <div class="rank">1</div>
+          <div>
+            <div>PROJECT NAME</div>
+            <div style="color: #666; font-size: 0.9em">
+              @username • GLOBAL RANK • COUNTRY
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="rank">2</div>
+          <div>
+            <div>PROJECT NAME</div>
+            <div style="color: #666; font-size: 0.9em">
+              @username • GLOBAL RANK • COUNTRY
+            </div>
+          </div>
+        </div>
+        <!-- Add more items -->
+      </div>
+
+      <div class="graph-container">
+        <h2>Activity Graph</h2>
+        <div class="graph">Graph Visualization (Placeholder)</div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="community-card">
+        <h2>TOP DEVELOPERS</h2>
+        <div class="developer-item">
+          <div class="rank">1</div>
+          @username
+        </div>
+        <div class="developer-item">
+          <div class="rank">2</div>
+          @username
+        </div>
+        <!-- Add more developers -->
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Contact us: lynkr@gmail.com | Phone: +6969696969</p>
+    <p>&copy; 2025 LYNKR. All rights reserved.</p>
+</footer>
+</body>
+</html>

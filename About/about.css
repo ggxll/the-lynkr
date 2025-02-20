@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "Plain Light";
+    src: url(./fonts/Poppins-ExtraLight.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Poppins ExtraLight";
+    /* background-color: #27ae60; */
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F5F8FB;
+    margin-top: 3%;
+}
+
+img {
+    width: 70px; /* Adjust size as needed */
+    height: 70px; /* Maintains aspect ratio */
+
+}
+/* Header & Navigation */
+header {
+    /* background-color: #000000; */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 6.9vw;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    color: #000;
+    /* background-color: #000; */
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* About Section */
+.about-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-section h3 {
+    color: #000000;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1 1 250px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #000000;
+}
+
+.values-list {
+    columns: 2;
+    list-style-type: none;
+}
+
+.values-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.values-list li::before {
+    content: "✓";
+    color: #27ae60;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+#nav {
+    position: fixed; /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 6.9vw;
+    background-color: #F5F8FB; /* Optional: Adjust transparency */
+    z-index: 1000;
+}
+
+#nav-part2 {
+    display: flex; /* Makes navigation items appear in a row */
+    align-items: center;
+    gap: 3vw; /* Adjust spacing between links */
+        margin-right: -4vw;
+
+}
+
+#nav-part2 a {
+    text-decoration: none;
+    color: black; /* Adjust as needed */
+    font-size: 1.04vw;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+#nav-part2 a:hover {
+    color: #3F7DF4; /* Change color on hover */
+}
